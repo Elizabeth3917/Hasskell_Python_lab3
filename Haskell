@@ -37,18 +37,18 @@ main = do
     putStrLn "=== Завдання 1: updateAt ==="
     let list1 = [10, 20, 30]
     print list1
-    print (updateAt 1 99 list1)   -- [10,99,30]
-    print (updateAt 0 42 [])      -- []
-    print (updateAt 5 7 [1,2,3])  -- [1,2,3]
+    print (updateAt 1 99 list1)  
+    print (updateAt 0 42 [])   
+    print (updateAt 5 7 [1,2,3])
 
     putStrLn "\n=== Завдання 4: incrementAge ==="
     let p = Person "Anna" 25
     print p
-    print (incrementAge p)        -- Person "Anna" 26
+    print (incrementAge p)      
     print p                       
 
     putStrLn "\n=== Завдання 6: removeAt ==="
     let list2 = [10, 20, 30]
     print list2
-    print (removeAt 1 list2)      -- [10,30]
-    print (removeAt 5 [1,2,3])    -- [1,2,3]
+    print (removeAt 1 list2)      
+    print (removeAt 5 [1,2,3])   
