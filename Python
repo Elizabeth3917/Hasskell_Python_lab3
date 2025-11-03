@@ -15,7 +15,7 @@ def update_dict(original: dict, key, value) -> dict:
 #    ... 
 
 def append_tuple(tpl: tuple, item) -> tuple:
-    return tpl + (item,)
+    return (item,) + tpl
 
 #Завдання 5. Імітація push для списку з незмінністю (Python)
 #Напишіть функцію push(stack, item), яка імітує операцію “додавання в стек”,
@@ -28,11 +28,10 @@ def push(stack: list, item) -> list:
 
 def main():
     print("=== Завдання 2: update_dict ===")
-    d1 = {'a': 1, 'b': 2}
+    d1 = {'name': 'Liza', 'Surname': 'Kravchenko', 'By_patronymic': 'Olehivna'}
     print("Початковий словник:", d1)
     d2 = update_dict(d1, 'b', 99)
     print("Новий словник:", d2)
-    print("Перевірка незмінності:", d1)  # d1 не змінено
 
     print("\n=== Завдання 3: append_tuple ===")
     tpl1 = (1, 2, 3)
